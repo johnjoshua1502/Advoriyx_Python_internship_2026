@@ -1,0 +1,44 @@
+Project: Student Management System (Python – File Handling)
+
+Objective:
+To build a basic management system using Python that stores data in CSV file and supports CRUD operations.
+
+Modules Used:
+• csv – For reading and writing CSV files
+• os – For handling file path
+
+Functions Overview:
+
+1. load_students()
+   - Loads all student records from students.csv
+   - Returns a list of dictionaries
+
+2. save_students(students)
+   - Writes the student list into CSV with header fields
+
+3. add_student(students)
+   - Takes user input for RollNo, Name, Class
+   - Appends it to the list and saves to CSV
+
+4. view_students(students)
+   - Prints all student records
+   - If no records found, shows message
+
+5. update_student(students)
+   - Searches for RollNo
+   - Updates Name and Class if found
+
+6. delete_student(students)
+   - Removes record matching RollNo and saves the updated list
+
+Execution Flow:
+• Program starts by loading existing records from CSV
+• Displays menu continuously until user selects Exit
+• All changes are immediately saved to the CSV file
+
+Error Handling:
+• FileNotFoundError handled during load
+• Basic input validation using try-except blocks
+
+Conclusion:
+The project successfully implements a simple management system using Python functions, CSV handling, loops, and basic exception management.
